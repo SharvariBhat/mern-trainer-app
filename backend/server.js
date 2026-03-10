@@ -51,7 +51,7 @@ app.get("/trainers", async (req, res) => {
 });
 
 // Add trainer
-app.post("/trainer", async (req, res) => {
+app.post("/trainers", async (req, res) => {
   try {
     const trainer = new Trainer(req.body);
     await trainer.save();
